@@ -143,7 +143,7 @@ nav ul li a {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
     filter: brightness(1.2);
     width: 50%;
-    height: 15.625rem;
+    height: 18.625rem;
     padding: 1.25rem;
     margin: 1.875rem auto;
     border-radius: 0.5rem;
@@ -160,12 +160,37 @@ nav ul li a {
 .proyecto h3 {
     text-align: center;
     margin-top: 0;
+    font-size: 2.5rem;
 }
-/* From Uiverse.io by NorthFishHasNa */
-button {
+.lenguajes-utilizados {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: left; 
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.lenguaje-proyecto {
+    background-color: rgb(59, 83, 160);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.lenguaje-proyecto:hover {
+    background-color: rgba(99, 123, 201, 0.466);
+    transform: scale(1.05);
+}
+.boton-proyecto {
     display: inline-block;
     border-radius: 4px;
-    background-color: rgba(24, 67, 207, 0.308);
+    background-color: rgba(59, 82, 160, 0.466);
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -175,35 +200,18 @@ button {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    position: absolute; /* Para posicionarlo dentro del contenedor */
-    bottom: 10px; /* Distancia desde el fondo del div */
-    left: 10px; /* Distancia desde la izquierda del div */
-  }
+    text-decoration: none;
 
-  button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-
-  button span:after {
-    content: '»';
+    /* Centrado horizontal absoluto */
     position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -15px;
-    transition: 0.5s;
-  }
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-  button:hover span {
-    padding-right: 15px;
-  }
-
-  button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+.boton-proyecto:hover {
+    background-color: rgba(59, 82, 160, 0.7);
+}
 
 #lenguajes {
     width: 70%;
@@ -290,7 +298,7 @@ button {
     }
     
     nav ul li {
-        margin: 0 0.625rem;
+        margin:  0 0.625rem;
     }
     
     nav ul li a {
@@ -337,7 +345,7 @@ button {
     }
     .proyecto {
         width: 75%;
-        height: 18.625rem;
+        height: 20.625rem;
         padding: 1rem;
     }
 
@@ -383,8 +391,11 @@ button {
     }
     .proyecto {
         width: 75%;
-        height: 18.625rem;
+        height: 20.625rem;
         padding: 1rem;
+    }
+    .proyecto h3{
+        font-size: 2rem;
     }
     #lenguajes {
         width: 100%;
@@ -402,7 +413,7 @@ button {
     @media (min-width: 320px) and (max-width: 480px) {
         nav {
             width: 110%;
-            height: 70px;
+            height: 5px;
             border-radius: 0;
             margin: 0;
             padding: 12px 0;
@@ -434,7 +445,7 @@ button {
         nav ul li a {
             color:#ffffff;
             text-decoration: none;
-            padding: 0.5rem 0;
+            padding: 1rem 0;
             display: block;
             font-size: 1rem;
             transition: background-color 0.3s, color 0.3s;
@@ -466,9 +477,12 @@ button {
 
     .proyecto {
         width: 80%;
+        height: 20.625rem;        
         padding: 0.75rem;
     }
-
+    .proyecto h3{
+        font-size: 1.8rem;
+    }
     #Contacto .social-icons a {
         width: 2rem;
         height: 2rem;
