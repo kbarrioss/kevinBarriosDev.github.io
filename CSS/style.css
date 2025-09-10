@@ -413,9 +413,15 @@ nav ul li a {
 }
     @media (min-width: 320px) and (max-width: 480px) {
         nav {
+<<<<<<< HEAD
             width: 95%;
             height: 30px;
             border-radius:30px;
+=======
+            width: 75%;
+            height: 5px;
+            border-radius: 0;
+>>>>>>> 9611f4363eeeab24abb98b015e00d78dd01616a3
             margin: 0;
             padding: 12px 0;
             top: 30px ;
