@@ -147,6 +147,8 @@ nav ul li a {
     padding: 1.25rem;
     margin: 1.875rem auto;
     border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .proyecto:hover {
@@ -154,7 +156,6 @@ nav ul li a {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 40px 60px -15px inset, 
     rgba(0, 0, 0, 0.3) 0px 20px 30px -20px inset;
     transform: scale(1.05);
-    transition: all 0.5s ease-in-out;
 }
 
 .proyecto h3 {
@@ -307,7 +308,7 @@ nav ul li a {
         text-decoration: none;
         padding: 0.625rem;
         border-radius: 1.5625rem;
-        font-size: 28px;
+        font-size: 25px;
     }
     #inicio h2 {
         font-size: 35px;
@@ -368,10 +369,10 @@ nav ul li a {
 }
 @media (min-width: 481px) and (max-width:768px){
     nav {
-        width: 75%;
+        width: 80%;
         left: 50%;
         top: 30px;
-        padding: 0.75re;
+        padding: 1rem;
     }
 
     nav ul li {
@@ -412,15 +413,15 @@ nav ul li a {
 }
     @media (min-width: 320px) and (max-width: 480px) {
         nav {
-            width: 110%;
-            height: 5px;
-            border-radius: 0;
+            width: 95%;
+            height: 30px;
+            border-radius:30px;
             margin: 0;
             padding: 12px 0;
-            top: 0;
+            top: 30px ;
             overflow: hidden;
             left: 50%;
-            background-color: rgba(59, 82, 160, 0.466s);
+            background-color: rgba(59, 82, 160, 0.466);
             padding: 0.75rem 0;
             align-items: center;
             z-index: 1000;
@@ -453,7 +454,7 @@ nav ul li a {
 
         
         nav ul li a.active {
-            color: rgb(202, 201, 201);   
+            color: rgb(255, 255, 255);   
             background-color: rgb(11, 31, 99);
             border-radius: 25px;
 
@@ -477,7 +478,7 @@ nav ul li a {
 
     .proyecto {
         width: 80%;
-        height: 20.625rem;        
+        height: 25rem;        
         padding: 0.75rem;
     }
     .proyecto h3{
